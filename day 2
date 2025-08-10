@@ -1,0 +1,91 @@
+1 ASSIGNMENT OPERATOR
+  public class AssignmentOper {
+    public static void main(String[] args) {
+        int a = 10;
+        a += 5;  
+        System.out.println("a += 5: " + a);
+        a -= 3;  
+        System.out.println("a -= 3: " + a);
+        a *= 2;  
+        System.out.println("a *= 2: " + a);
+        a /= 4; 
+        System.out.println("a /= 4: " + a);
+        a %= 3;  
+        System.out.println("a %= 3: " + a);
+    }
+}
+2 BITWISE OPERATOR
+  public class Bitwiseoper {
+    public static void main(String[] args) {
+        int a = 5;  
+        int b = 3;  
+        System.out.println("a & b: " + (a & b));  
+        System.out.println("a | b: " + (a | b));  
+        System.out.println("a ^ b: " + (a ^ b));  
+        System.out.println("~a: " + (~a));        
+    }
+}
+
+3 RELATIONAL OPERATOR
+  public class Relationaloper {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+    }
+}
+
+4 SHIFT OPERATOR
+  public class ShiftOper {
+    public static void main(String[] args) {
+        int a = 10; 
+        System.out.println("Left shift (a << 2): " + (a << 2)); 
+        System.out.println("Right shift (a >> 2): " + (a >> 2));
+    }
+}
+
+5 SUMOFDIGITS
+  import java.util.Scanner;
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        System.out.println("Sum of digits: " + sum);
+    }
+}
+
+6 SWAPPING NUMBERS
+  public class SwapNumbers {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("Before Swap: a = " + a + ", b = " + b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("After Swap: a = " + a + ", b = " + b);
+    }
+}
+
+7 TERNARY OPERATOR
+import java.util.Scanner;
+
+public class Ternary {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int max = (a > b) ? a : b;
+        System.out.println("Maximum is: " + max);
+    }
+}
