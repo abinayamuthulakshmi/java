@@ -1,0 +1,282 @@
+package day8;
+STRING EMPLOYEE
+public class Employee {
+	int empid=98;
+	String name="Akash";
+	static String companyname="zoho";
+	void display(int a,String name)
+	{
+		System.out.println(a + " "+ name +" " + companyname + " ");
+	}
+	public static void main(String[] args) {
+		Employee obj = new Employee();
+		System.out.println(obj.empid);
+		System.out.println(Employee.companyname);
+		obj.display(55, "Akash");
+		obj.display(58, "Ashwin");
+		obj.display(54, "Arjun");
+		obj.display(59, "Arun");
+		
+	}
+
+}
+
+MAIN COLLEGE
+package day8;
+
+public class Main {
+	int rollno=55;
+	String name="Akash";
+	static String college="zion";
+	void display(int a,String name)
+	{
+		System.out.println(a + " "+ name +" " + college + " ");
+	}
+	public static void main(String[] args) {
+		Main obj = new Main();
+		System.out.println(obj.rollno);
+		System.out.println(Main.college);
+		obj.display(55, "Akash");
+		obj.display(58, "Ashwin");
+		obj.display(54, "Arjun");
+		obj.display(59, "Arun");
+		
+	}
+
+}
+
+MAIN METHOD
+package day8;
+
+public class mainmethod {
+	static
+	{
+		System.out.println("Mount zion");
+	}
+	public static void main(String[]args)
+	{
+		System.out.println("Nice to meet you");
+	}
+
+}
+
+STATIC KEY
+package day8;
+
+public class Statickey {
+	int empid=98;
+	String name="Akash";
+	static String companyname="zoho";
+	void display(int a,String name)
+	{
+		System.out.println(a + " "+ name +" " + companyname + " ");
+	}
+	public static void show(int a)
+	{
+	     Statickey.companyname="zoho...";
+	     System.out.println(a+ " " +companyname);
+	}
+	public static void main(String[]args)
+	{
+		Statickey.show(98);
+		Statickey obj = new Statickey();
+		obj.display(92, "Akash");	
+	}
+}
+
+UPDATE VARIABLE
+package day8;
+
+public class Updatevar {
+	int rollno=55;
+	String name="Akash";
+	static String college="zion";
+	void display(int a,String name)
+	{
+		System.out.println(a + " "+ name +" " + college + " ");
+	}
+	public static void main(String[] args) {
+		Updatevar obj = new Updatevar();
+		System.out.println(obj.rollno);
+		System.out.println(Updatevar.college);
+		Updatevar.college=("zoho...");
+		obj.display(55, "Akash");
+		
+	}
+
+}
+
+package oops;
+
+public class Constrctor 
+{
+	int age;
+	String name;
+	Constrctor(int a, String str)
+	{
+		age=a;
+		name=str;
+	}
+	void display() 
+	{
+		System.out.println(age + " " + name);
+		
+	}
+	public static void main(String[]args)
+	{
+		Constrctor obj = new Constrctor(20,"Akash");
+		obj.display();
+	
+  }
+}
+
+CONSTRCTOR
+package oops;
+
+public class Constrctor 
+{
+	int age;
+	String name;
+	Constrctor(int a, String str)
+	{
+		age=a;
+		name=str;
+	}
+	void display() 
+	{
+		System.out.println(age + " " + name);
+		
+	}
+	public static void main(String[]args)
+	{
+		Constrctor obj = new Constrctor(20,"Akash");
+		obj.display();
+  }
+}
+DAD PROPERTY
+package oops;
+
+public class dadproperty 
+	{
+		void property()
+		{
+			System.out.println("House,Lands,money");
+		}
+		class son extends dadproperty
+		{
+			void show()
+			{
+				System.out.println("Bike");
+			}
+			
+		}
+		public static void main(String[] args) 
+		{
+			dadproperty obj=new dadproperty();
+			obj.property();	
+			
+		}
+	}
+HOTEL OBJECT
+
+package oops;
+
+public class Hotel {
+	String hotel;
+	String food;
+	int price;
+	public static void main(String[] args) {
+		Hotel obj = new Hotel();
+		obj.hotel = "maran";
+		System.out.println(obj.hotel);
+		Hotel obj1 = new Hotel();
+		obj.food = "parrotta";
+		System.out.println(obj.food);
+		Hotel obj2 = new Hotel();
+		obj.price = 20;
+		System.out.println(obj.price);	
+	}
+
+}
+KEY
+package oops;
+
+public class key {
+		int age;
+		String name;
+		
+		key(int age, String name)
+		{
+			this.age=age;
+			this.name=name;
+		}
+		void display()
+		{
+			System.out.println(age +""+ name);
+		}
+		public static void main(String[] args) 
+		{
+			key obj=new key (19,"Akash");
+			obj.display();
+			
+		}
+	}
+
+SHOW FUNCTION
+package oops;
+
+public class show {
+			void display()
+		{
+			System.out.println("Hii display");
+		}
+		void show()
+		{
+			System.out.println("hii show");
+			this.display();
+		}
+
+		public static void main(String[] args) 
+		
+		{
+			show obj=new show();
+			obj.show();
+		
+		}
+
+	}
+STRING TRIP
+package oops;
+
+public class Trip {
+	String place = "Place : Valparai";
+	String triporganize = "Triporganize : Thirishika";
+	String budget = "Budget : 50k";
+	String hotel = "Hotel : Taj";
+	 public static void main(String[] args) {
+		 Trip obj = new Trip();
+		 System.out.println(obj.place);
+		 Trip obj1 = new Trip();
+		 System.out.println(obj.triporganize);
+		 Trip obj2 = new Trip();
+		 System.out.println(obj.budget);
+		 Trip obj3 = new Trip();
+		 System.out.println(obj.hotel);
+	 }
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
